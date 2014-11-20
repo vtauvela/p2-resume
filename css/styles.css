@@ -1,12 +1,33 @@
-/* Your Website Styles */
+/* GLOBAL */
 body {
 	background: #eee;
 }
 
+img {}
 
 div {
 	margin-top: -60px;	x 
 }
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+}
+
+p {}
+
+/* TYPOGRAPHY */
+
+
+/* NAVIGATION */
+
+
+/* HOVER STATES */
+
+
+/* BLOCKQUOTE */
+
+
 
 
 /* Show Grid */
