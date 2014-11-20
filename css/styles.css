@@ -10,24 +10,60 @@ div {
 }
 
 h1 {
-	text-align: center;
-	font-size: 4em;
+	text-align: left;
+	font-size: 3.5em;
+	padding-top: 60px;
+	font-family: 'Nixie One', sans-serif;
+	font-weight: 300;
 }
 
-p {}
+h3 {
+	font-family: 'Nixie One', sans-serif;
+	color: #FFB54D;
+}
+
+p {
+	font-family: 'Nixie One', sans-serif;
+}
+
+.contact {
+	text-align: left;
+	padding: 0 0px 40px 0px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
 
 /* TYPOGRAPHY */
 
 
 /* NAVIGATION */
 
+.nav {
+	display: inline;
+	font-size: .9em;
+}
+
+a {
+	color: #FFB54D;
+	text-decoration: none;
+}
+
+header {
+	padding-top: 50px;
+}
 
 /* HOVER STATES */
+
+a:hover {
+	transition: color 0.5s;
+	color: #B37C30;
+}
 
 
 /* BLOCKQUOTE */
 
 
+/* remember colorpicker.com */
 
 
 /* Show Grid */
