@@ -3,17 +3,8 @@ body {
   	font: 1em/1.5 sans-serif;
 }
 
-.container {
-	width: 1000px;
-	margin: auto;
-}
-
-.header {
-	width: 1000px;
-	margin: auto;
-	font-size: 1rem;
-	position: relative;
-	text-align: center;
+header {
+	width: 100%;
 }
 
 #container2  
@@ -38,6 +29,11 @@ body {
     margin: 0 0 0 0;  
     z-index:0;  
 }  
+  
+.content  
+{  
+    position:relative;  
+} 
 
 h1 {
 	text-align: center;
@@ -50,6 +46,13 @@ h1 {
 	padding: 20px 0 0 20px;
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1rem;
+	font-style: italic;
+
+}
+
 h3 {
 	font-family: 'Questrial', sans-serif;
 	text-transform: uppercase;
@@ -58,15 +61,13 @@ h3 {
 	letter-spacing: 3px;
 }
 
-p,
-td {
-	font-size: 1.01em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+p {
+	font-size: .9em;
 }
 
 dd {
 	text-transform: uppercase;
+	color: white;
 	letter-spacing: 3px;
 	padding: 10px 45px 0 0;
 	margin: 0 10px 0 0;
@@ -78,10 +79,10 @@ dd {
 	list-style-type: none;
 	text-align: center;
 	text-transform: lowercase;
-	margin: 35px 0 40px 5px;
+	margin: 0 0 20px 25px;
 	font-size: 1.45rem;
 	color: black;
-	letter-spacing: 1px;
+	letter-spacing: -1px;
 }
 
 /* TYPOGRAPHY */
@@ -94,22 +95,20 @@ dd {
 /* TABLE */
 
 th {
-  	font-family: 'Questrial', sans-serif;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	color: #E84F63;
-	letter-spacing: 3px;
-  	text-transform: uppercase;
+  background: orange;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-tbody {
-	line-height: 40px;
+tr:nth-child(even) {
+  background: #ccc;
 }
 
-td:nth-child(odd) {
-	font-weight: 500;
+tr:hover {
+  background: orange;
+  transition: background 1s;
 }
-
 /* NAVIGATION */
 
 .nav {
@@ -139,17 +138,14 @@ a:link {
 	font-family: 'Questrial', sans-serif;
 }
 
-a:hover {
-	transition: color 0.3s;
-	color: white;
-	font-family: 'Questrial', sans-serif;
-}
-
 a:visited {
 	color: #7A1D29;
 }
 
-
+a:hover {
+	transition: color 0.3s;
+	color: #E84F63;
+}
 
 
 /* Show Grid */
@@ -159,3 +155,8 @@ a:visited {
 
 /* Advanced Selectors */
 
+
+.container {
+	width: 1000px;
+	margin: auto;
+}
