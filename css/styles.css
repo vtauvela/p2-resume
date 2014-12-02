@@ -48,7 +48,8 @@ h1 {
 
 h2 {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
+	font-style: italic;
 
 }
 
@@ -73,9 +74,15 @@ dd {
 }
 
 .contact {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	list-style-type: none;
 	text-align: center;
-	font-family: 'Questrial', sans-serif;
-	font-weight: 300;
+	text-transform: lowercase;
+	margin: 0 0 20px 25px;
+	font-size: 1.45rem;
+	color: black;
+	letter-spacing: -1px;
 }
 
 /* TYPOGRAPHY */
@@ -85,6 +92,23 @@ dd {
 	color: #707070;
 }
 
+/* TABLE */
+
+th {
+  background: orange;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #ccc;
+}
+
+tr:hover {
+  background: orange;
+  transition: background 1s;
+}
 /* NAVIGATION */
 
 .nav {
