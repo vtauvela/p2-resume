@@ -2,13 +2,13 @@
 body {
 	text-align: center;
 	width: 100%;
-	padding: 0 0 0 13%;
+	margin: 0 12% 0 12%;
   	font: 1em/1.5 sans-serif;
 }
 
 header {
 	width: 100%;
-	z-index: 10;
+	z-index: 0;
 }
 
 .container {
@@ -27,15 +27,15 @@ header {
   
 #container2 .transparency  
 {  
-    opacity: 0.5;  
-    filter:alpha(opacity=50);  
-    -moz-opacity:0.5;  
+    opacity: 0.3;  
+    filter:alpha(opacity=30);  
+    -moz-opacity:0.3;  
     background-color:#000000;  
-    width:980px;  
+    width:1000px;  
     height:1500px;  
     position:absolute;  
     margin: 0 0 0 0;  
-    z-index:-1;  
+    z-index:0;  
 }  
   
 .content  
@@ -45,17 +45,20 @@ header {
 
 h1 {
 	text-align: center;
-	font-size: 3.5em;
-	font-family: '', sans-serif;
-	letter-spacing: 12px;
+	font-size: 5em;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: -.05em;
 	font-weight: 300;
-	margin: 0px;
+	color: #E84F63;
+	margin: 75px 0 0 0;
 	padding: 20px 0 0 20px;
 }
 
 h3 {
 	font-family: 'Questrial', sans-serif;
+	text-transform: uppercase;
 	color: #E84F63;
+	letter-spacing: 3px;
 }
 
 p {
@@ -78,6 +81,10 @@ dd {
 
 /* TYPOGRAPHY */
 
+.lastname {
+	font-weight: 400;
+	color: #474747;
+}
 
 /* NAVIGATION */
 
