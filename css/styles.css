@@ -1,12 +1,15 @@
 /* GLOBAL */
 body {
 	background: #eee;
+	width: auto;
 }
 
-img {}
+img {
+
+}
 
 div {
-	margin-top: -60px;	x 
+	margin-top: -60px;
 }
 
 h1 {
@@ -70,3 +73,5 @@ a:hover {
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }
+
+/* Advanced Selectors */
