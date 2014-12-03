@@ -33,7 +33,7 @@ body {
     -moz-opacity:0.15;  
     background-color:#000000;  
     width:1000px; 
-    height:12em;  
+    height:16em;  
     position:absolute;  
     margin: 0 0 0 0;  
     z-index:0;
@@ -194,6 +194,14 @@ i.fa.fa-instagram:hover {
 i.fa.fa-heart:hover {
 	transition: color 0.3s;
 	color: #FF8C9B;
+}
+
+i.fa.fa-graduation-cap,
+i.fa.fa-suitcase,
+i.fa.fa-trophy,
+i.fa.fa-wrench {
+	font-size: 1.35em;
+	margin-bottom: 0em;
 }
 
 /* Container */
