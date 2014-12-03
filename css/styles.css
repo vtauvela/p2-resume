@@ -2,14 +2,18 @@
 body {
   	font: 1em/1.5 sans-serif;
   	max-width: 100%;
+  	background: #F5F5F5;
 }
 
 .header {
 	width: 100%;
-	padding: 0 0 120px 0;
+	padding: 0 100px 100px 0;
 }
 
-
+.subheader {
+	margin-top: 32px;
+	font-size: 1.05em;
+}
 
 #container2  
 {    
@@ -46,10 +50,10 @@ body {
 	font-weight: 100;
 	text-align: center;
 	text-transform: lowercase;
-	padding: 0 0 55px 0px;
-	margin-bottom: 100px;
-	margin-top: -30px;
-	font-size: 1.1rem;
+	padding: 25px 0 5px 0px;
+	margin-bottom: 50px;
+	margin-top: -50px;
+	font-size: 1em;
 }
 
 h1 {
@@ -65,33 +69,37 @@ h1 {
 
 h2 {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.55em;
-	font-style: italic;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+	font-size: 2.05em;
+	color: #E84F63;
+	letter-spacing: .03em;
+	padding-bottom: 3px;
+	border-bottom-style: solid 1px;
 }
 
-h3,
-th {
+h3 {
 	font-family: 'Quicksand', sans-serif;
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
-	text-align: left;
-	font-size: 1.85em;
-	color: #E84F63;
-	letter-spacing: .15em;
+	text-align: center;
+	font-size: 1.32em;
+	color: black;
+	letter-spacing: .03em;
 	padding-bottom: 3px;
-	padding: 0.25em;
+	border-bottom-style: solid 1px #707070;
 }
 
-p,
-td {
+p {
 	font-size: 1.05em;
 	font-family: 'Roboto';
-	text-align: left;
+	text-align: center;
 	font-weight: 300;
-	color: black;
-	line-height: 1.75em;
-	padding: 1em;
-
+	color: #707070;
+	line-height: 1.3em;
+	letter-spacing: .01em;
 }
 
 dd {
@@ -102,6 +110,7 @@ dd {
 	padding: 1em;
 	margin: 0 10px 0 0;
 }
+
 
 
 /* HOVER STATES */
@@ -126,15 +135,11 @@ a:hover {
 
 .lastname {
 	font-weight: 400;
-	color: #707070;
+	color: black;
 }
 
-/* TABLE */
-
-td:nth-last-child(-6n+2) {
-  font-weight: bold;
-  line-height: 45px;
-  font-size: 1.05em;
+td:nth-last-child(-2n+6) {
+	font-weight: 300;
 }
 /* NAVIGATION */
 
@@ -158,11 +163,6 @@ dl {
 }
 
 
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-}
-
 /* Advanced Selectors */
 
 
@@ -173,12 +173,14 @@ i.fa.fa-envelope-square,
 i.fa.fa-facebook-square,
 i.fa.fa-instagram {
 	color: #E84F63;
-	font-size: 2em;
+	font-size: 2.15em;
+	margin-bottom: 0.4em;
 }
 
 i.fa.fa-heart {
-	font-size: 1.75em;
-	margin-top: 20px;
+	font-size: 1.35em;
+	margin-top: 40px;
+	color: #E84F63;
 }
 
 i.fa.fa-phone-square:hover,
@@ -189,10 +191,21 @@ i.fa.fa-instagram:hover {
 	color: #FF8C9B;
 }
 
+i.fa.fa-heart:hover {
+	transition: color 0.3s;
+	color: #FF8C9B;
+}
+
 /* Container */
 
 .container {
 	width: 1000px;
 	margin: auto;
 	padding-bottom: 55px;
+}
+
+
+/* Show Grid */
+.showgrid {
+	background: #fff repeat-y;
 }
