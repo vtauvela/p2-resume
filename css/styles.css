@@ -92,13 +92,34 @@ h3 {
 	border-bottom-style: solid 1px #707070;
 }
 
+h4 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-weight: 400;
+	text-align: center;
+	font-size: .97em;
+	color: #707070;
+	letter-spacing: .03em;
+	padding-bottom: 3px;
+}
+
 p {
 	font-size: 1.05em;
 	font-family: 'Roboto';
 	text-align: center;
 	font-weight: 300;
 	color: #707070;
-	line-height: 1.3em;
+	line-height: 1.07em;
+	letter-spacing: .01em;
+}
+
+.small {
+	font-size: .001em;
+	font-family: 'Roboto';
+	text-align: center;
+	font-weight: 100;
+	color: silver;
+	line-height: 1.07em;
 	letter-spacing: .01em;
 }
 
