@@ -1,33 +1,38 @@
 /* GLOBAL */
 body {
   	font: 1em/1.5 sans-serif;
+  	max-width: 100%;
 }
 
-header {
+.header {
 	width: 100%;
+	padding: 0 0 120px 0;
 }
+
+
 
 #container2  
 {    
     width:100%;  
     color:#FFFFFF;  
     position:fixed;  
-    float:left;  
+    float:none;  
     margin:0 0 0 0;  
-    overflow:hidden;  
+    overflow:hidden; 
+
 }  
   
 #container2 .transparency  
 {  
-    opacity: 0.3;  
-    filter:alpha(opacity=30);  
-    -moz-opacity:0.3;  
+    opacity: 0.15;  
+    filter:alpha(opacity=15);  
+    -moz-opacity:0.15;  
     background-color:#000000;  
     width:1000px; 
-    height:65rem;  
+    height:12em;  
     position:absolute;  
     margin: 0 0 0 0;  
-    z-index:0;  
+    z-index:0;
 }  
   
 .content  
@@ -35,55 +40,87 @@ header {
     position:relative;  
 } 
 
+.contact {
+	font-family: 'Roboto', sans-serif;
+	list-style-type: none;
+	font-weight: 100;
+	text-align: center;
+	text-transform: lowercase;
+	padding: 0 0 55px 0px;
+	margin-bottom: 100px;
+	margin-top: -30px;
+	font-size: 1.1rem;
+}
+
 h1 {
 	text-align: center;
-	font-size: 5rem;
+	font-size: 3em;
 	font-family: 'Quicksand', sans-serif;
-	letter-spacing: -.05em;
-	font-weight: 300;
+	letter-spacing: .03em;
+	font-weight: 100;
 	color: #E84F63;
-	margin: 75px 0 0 0;
-	padding: 20px 0 0 20px;
+	margin: 45px 0 -30px 0;
+	padding: 35px 0 0px 20px;
 }
 
 h2 {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.1rem;
+	font-size: 1.55em;
 	font-style: italic;
-
 }
 
-h3 {
-	font-family: 'Questrial', sans-serif;
+h3,
+th {
+	font-family: 'Quicksand', sans-serif;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-weight: 400;
+	text-align: left;
+	font-size: 1.85em;
 	color: #E84F63;
-	letter-spacing: 3px;
+	letter-spacing: .15em;
+	padding-bottom: 3px;
+	padding: 0.25em;
 }
 
-p {
-	font-size: .9em;
+p,
+td {
+	font-size: 1.05em;
+	font-family: 'Roboto';
+	text-align: left;
+	font-weight: 300;
+	color: black;
+	line-height: 1.75em;
+	padding: 1em;
+
 }
 
 dd {
 	text-transform: uppercase;
+	font-size: .97em;
 	color: white;
 	letter-spacing: 3px;
-	padding: 10px 45px 0 0;
+	padding: 1em;
 	margin: 0 10px 0 0;
 }
 
-.contact {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	list-style-type: none;
-	text-align: center;
-	text-transform: lowercase;
-	margin: 0 0 20px 25px;
-	font-size: 1.45rem;
+
+/* HOVER STATES */
+
+a:link {
+	text-decoration: none;
 	color: black;
-	letter-spacing: -1px;
+	font-family: 'Questrial', sans-serif;
 }
+
+a:visited {
+	color: #7A1D29;
+}
+
+a:hover {
+	transition: color 0.3s;
+	color: white;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -94,20 +131,10 @@ dd {
 
 /* TABLE */
 
-th {
-  background: orange;
+td:nth-last-child(-6n+2) {
   font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background: #ccc;
-}
-
-tr:hover {
-  background: orange;
-  transition: background 1s;
+  line-height: 45px;
+  font-size: 1.05em;
 }
 /* NAVIGATION */
 
@@ -125,26 +152,9 @@ tr:hover {
 }
 
 dl {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 0px;
 	text-align: center;
 
-}
-
-/* HOVER STATES */
-
-a:link {
-	text-decoration: none;
-	color: black;
-	font-family: 'Questrial', sans-serif;
-}
-
-a:visited {
-	color: #7A1D29;
-}
-
-a:hover {
-	transition: color 0.3s;
-	color: #E84F63;
 }
 
 
@@ -156,7 +166,33 @@ a:hover {
 /* Advanced Selectors */
 
 
+/* Icons */
+
+i.fa.fa-phone-square,
+i.fa.fa-envelope-square,
+i.fa.fa-facebook-square,
+i.fa.fa-instagram {
+	color: #E84F63;
+	font-size: 2em;
+}
+
+i.fa.fa-heart {
+	font-size: 1.75em;
+	margin-top: 20px;
+}
+
+i.fa.fa-phone-square:hover,
+i.fa.fa-envelope-square:hover,
+i.fa.fa-facebook-square:hover,
+i.fa.fa-instagram:hover {
+	transition: color 0.3s;
+	color: #FF8C9B;
+}
+
+/* Container */
+
 .container {
 	width: 1000px;
 	margin: auto;
+	padding-bottom: 55px;
 }
